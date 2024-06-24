@@ -1,8 +1,9 @@
 const sgMail = require('@sendgrid/mail');
+
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const loadParticipantData = () => {
-  const data = process.env.PARTICIPANT_DATA || '{}';
+  const data = process.env.PARTICIPANT_DATA || '[]';
   return JSON.parse(data);
 };
 
