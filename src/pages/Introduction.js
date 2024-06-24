@@ -13,12 +13,12 @@ const Introduction = () => {
         <p>The coach picks a number, and the contestants with that number from both teams run across the beach (like 7 meters, don't worry) to drink from the watermelon placed between the two teams. The contestant who gets drunk first wins. Needless to say, we are expecting male winners and lots of fun. :)</p>
         <h2>Schedule:</h2>
         <p>
-          <strong>Start Time:</strong> The outing starts at about 16:00. We will begin gathering on the beach to get some sun and hydrate or something.<br />
-          <strong>Game Start:</strong> The games will begin at about 19:15.
+          <strong>Start Time:</strong> The outing starts at about <b>16:00</b>. We will begin gathering on the beach to get some sun and hydrate or something.<br />
+          <strong>Game Start:</strong> The games will begin at about <b>19:15</b> .
         </p>
         <h2>Event Location:</h2>
         <p>
-          <strong>Location:</strong> Our next event is in Split, Croatia, on Tuesday, June 26th, at Kasjuni Beach. It is a must-see beach located west of the city, right next to Marjan Hill. The place features a DJ on the beach, beds, and a bar.
+          <strong>Location:</strong> Our next event is in Split, Croatia, on <b>Wednesday, June 26th, at Kasjuni Beach.</b> It is a must-see beach located west of the city, right next to Marjan Hill. The place features a DJ on the beach, beds, and a bar.
         </p>
         <h2>Post-Event Plans:</h2>
         <p>
@@ -27,7 +27,7 @@ const Introduction = () => {
         <h2>Participation Details:</h2>
         <p>
           <strong>Sign-Up:</strong> The signup sheet is at the front desk.<br />
-          <strong>Cost:</strong> The cover is 20 euros per person (12 euros for hostel guests of the Beach and Mint hostels), which includes the game (and obviously, lots of drinking from the watermelon).
+          <strong>Cost:</strong> The cover is 20 euros per person (<b>12 euros for hostel guests</b> of the Beach and Mint hostels), which includes the game (and obviously, lots of drinking from the watermelon).
         </p>
       </div>
       <div className="button-container">
