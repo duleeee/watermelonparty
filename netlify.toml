@@ -1,6 +1,7 @@
 [build]
+  base = ""
   publish = "build"
-  functions = "functions"
+  command = "NODE_OPTIONS=--openssl-legacy-provider npm run build"
 
 [[redirects]]
   from = "/*"
