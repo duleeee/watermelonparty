@@ -8,7 +8,11 @@ const Introduction = () => {
       <div className="contentw">
         <h1>Watermelon Beach Party</h1>
         <h2>What is it?</h2>
-        <p>It's a <b>drinking game, or as some call it, a drinking sport</b>. Two mixed-gender teams compete to see who can drink more of the <b>icy, refreshing Vodka and Fanta mix</b> from a big, juicy watermelon on the beach.  Team Beach and Hostel Mint have <b>24 contestants</b> total, 12 in each team, 6 male and 6 female. Each contestant has a number written on their shoulder from 1 to 12 and their drinking name written on their arm.</p>
+        <p>It's a <b>drinking game, or as some call it, a drinking sport</b>.</p>
+    <p>Two mixed-gender teams compete to see who can drink more of the <b>icy, refreshing Vodka and Fanta mix</b> </p>
+    <p>from a big, juicy watermelon on the beach.  </p>
+    <p>Team Beach and Hostel Mint have <b>24 contestants total, 12 in each team, 6 male and 6 female.</b></p> 
+    <p>Each contestant has a number written on their shoulder from 1 to 12 and their drinking name written on their arm.</p>
         <h2>How it Works:</h2>
         <p>The coach picks a number, and the contestants with that number from both teams run across the beach (like 7 meters, don't worry) to drink from the watermelon placed between the two teams, with a <b>STRAW</b>. <b>Whoever gets drunk, wins.</b> Needless to say, <b>we are expecting many winners and lots of fun.</b> :)</p>
         <h2>Schedule:</h2>
