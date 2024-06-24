@@ -29,7 +29,7 @@
   background-color: #ff69b4; /* Bright pink color for a fun look */
   border: none;
   border-radius: 15px; /* Makes the button rounded */
-  font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Fun, roundish font */
+  font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
 }
