@@ -53,7 +53,7 @@ const ParticipantDetails = () => {
           <h2>Select your team</h2>
           <div className="button-container">
             <button className="selection-button" onClick={() => { handleChange({ target: { name: 'team', value: 'hostel mint' } }); setStep(1); }}>Hostel Mint</button>
-            <button className="selection-button" onClick={() => { handleChange({ target: { name: 'team', value: 'team beach' } }); setStep(1); }}>Team Beach</button>
+            <button className="selection-button" onClick={() => { handleChange({ target: { name: 'team', value: 'team beach' } }); setStep(1); }}>Beach Hostel</button>
           </div>
         </div>
       )}
