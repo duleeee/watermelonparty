@@ -12,7 +12,8 @@ const Introduction = () => {
     <p>Two mixed-gender teams compete to see who <b>can drink</b> </p>
     <p>more of the <b>icy, refreshing Vodka and Fanta mix</b> </p>
     <p>from a big, juicy watermelon on the beach.  </p>
-    <p>Team Beach and Hostel Mint have <b>24 PARTICIPANTS total, 12 in each TEAM, 6 MALE and 6 FEMALE.</b></p> 
+    <p>Two teams: Team Beach (Beach Hostel Guests) and Hostel Mint; </p> 
+  <p><b>24 PARTICIPANTS total, 12 in each TEAM, 6 MALE and 6 FEMALE.</b></p> 
     <p>Each contestant has a NUMBER written on their shoulder, 1 to 12, </p>
     <p>and their DRINKING NAME below it.</p>
         <h2>How it Works:</h2>
