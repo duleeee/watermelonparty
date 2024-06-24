@@ -9,9 +9,9 @@ const Introduction = () => {
         <h1>Watermelon Beach Party</h1>
         <h2>What is it?</h2>
         <p>It's a <b>drinking game, or as some call it, a drinking sport</b>.</p>
-    <p>Two mixed-gender teams compete to see who <b>can drink more</b> </p>
-    <p>of the <b>icy, refreshing Vodka and Fanta mix</b> </p>
-    <p>from a big, juicy WATERMELON on the beach.  </p>
+    <p>Two mixed-gender teams compete to see who <b>can drink</b> </p>
+    <p>more of the <b>icy, refreshing Vodka and Fanta mix</b> </p>
+    <p>from a big, juicy watermelon on the beach.  </p>
     <p>Team Beach and Hostel Mint have <b>24 PARTICIPANTS total, 12 in each TEAM, 6 MALE and 6 FEMALE.</b></p> 
     <p>Each contestant has a NUMBER written on their shoulder, 1 to 12, </p>
     <p>and their DRINKING NAME below it.</p>
