@@ -59,7 +59,7 @@ exports.handler = async (event, context) => {
 
   const adminMailOptions = {
     to: 'dusan.rula@gmail.com',
-    from: 'your-email@example.com', // Use the email address or domain you verified with SendGrid
+    from: 'dusan.rula@gmail.com', // Use the email address or domain you verified with SendGrid
     subject: 'New Watermelon Beach Party Participants',
     html: `
       <h2>New Participant</h2>
@@ -77,7 +77,7 @@ exports.handler = async (event, context) => {
 
   const participantMailOptions = {
     to: participantEmail,
-    from: 'your-email@example.com', // Use the email address or domain you verified with SendGrid
+    from: 'dusan.rula@gmail.com', // Use the email address or domain you verified with SendGrid
     subject: 'Watermelon Beach Party Confirmation',
     html: `
       <div style="font-family: Arial, sans-serif; text-align: center; background-color: white; padding: 20px;">
