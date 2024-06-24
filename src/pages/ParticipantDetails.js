@@ -162,7 +162,7 @@ const ParticipantDetails = () => {
       {step === 4 && (
         <div className="content">
           <h2>Confirmation</h2>
-          <p>Please proceed to the front desk of the Hostel Mint or the Hostel Beach to pay for the event. The price is 12 euros per person for hostel guests. Please show them this screen, {participants[0].drinkingName}, {participants[0].drinkingName.email}, {participants[0].name}. Also, please take a screenshot for your reference. We will send you the confirmation email after the payment. </p>
+          <p>Please proceed to the front desk of the Hostel Mint or the Hostel Beach to pay for the event. The price is 12 euros per person for hostel guests. Please show them this screen, {participants[0].drinkingName}, {participants[0].email}, {participants[0].name}. Also, please take a screenshot for your reference. We will send you the confirmation email after the payment. </p>
           <div className="button-container">
             <button className="selection-button" onClick={handleFinish}>Finish</button>
           </div>
