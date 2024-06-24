@@ -17,9 +17,11 @@ const Introduction = () => {
           <strong>Game Start:</strong> <b>The games will begin at 19:30</b> .
         </p>
         <h2>Event Location:</h2>
-        <p>
-          <strong>Location:</strong> Our next event is in Split, Croatia, on <b>Wednesday, June 26th, at Kasjuni Beach.</b> It is <b>a must-see beach </b> located west of the city, right next to Marjan Hill. The place features <b>a DJ on the beach, beds, and a bar.</b>
-        </p>
+        <p><strong>Location:</strong> Our next event is in Split, Croatia,</p>
+        <p>on <b>Wednesday, June 26th, at Kasjuni Beach.</b> </p> 
+        <p>It is <b>a must-see beach </b> located west of the city, right next to Marjan Hill.</p>
+        <p>The place features <b>a DJ on the beach, beds, and a bar.</b></p>
+      
         <h2>Post-Event Plans:</h2>
         <p>
           <strong>After-Event:</strong> After the event, we will visit some cool bars in the Old Town, near the Diocletian's Palace.
