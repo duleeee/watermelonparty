@@ -9,12 +9,19 @@ const Introduction = () => {
         <h1>Watermelon Beach Party</h1>
         <h2>What is it?</h2>
         <p>It's a <b>drinking game, or as some call it, a drinking sport</b>.</p>
-    <p>Two mixed-gender teams compete to see who can drink more of the <b>icy, refreshing Vodka and Fanta mix</b> </p>
-    <p>from a big, juicy watermelon on the beach.  </p>
-    <p>Team Beach and Hostel Mint have <b>24 contestants total, 12 in each team, 6 male and 6 female.</b></p> 
-    <p>Each contestant has a number written on their shoulder from 1 to 12 and their drinking name written on their arm.</p>
+    <p>Two mixed-gender teams compete to see who <b>can drink more</b> </p>
+    <p>of the <b>icy, refreshing Vodka and Fanta mix</b> </p>
+    <p>from a big, juicy WATERMELON on the beach.  </p>
+    <p>Team Beach and Hostel Mint have <b>24 PARTICIPANTS total, 12 in each TEAM, 6 MALE and 6 FEMALE.</b></p> 
+    <p>Each contestant has a NUMBER written on their shoulder, 1 to 12, </p>
+    <p>and their DRINKING NAME below it.</p>
         <h2>How it Works:</h2>
-        <p>The coach picks a number, and the contestants with that number from both teams run across the beach (like 7 meters, don't worry) to drink from the watermelon placed between the two teams, with a <b>STRAW</b>. <b>Whoever gets drunk, wins.</b> Needless to say, <b>we are expecting many winners and lots of fun.</b> :)</p>
+        <p>The coach picks a number, </p>
+    <p>and the participants with the chosen number, of both teams, leap across the beach running (for like 7 meters, don't worry) </p>
+    <p>to drink from the watermelon placed in the center, </p>
+    <p><b>THROUGH A STRAW</b>.</p>
+    <p><b>Whoever gets drunk, wins.</b> </p> 
+    <p>Needless to say, <b>we are expecting many winners and lots of fun.</b> :)</p>
         <h2>Schedule:</h2>
         <p>
           <strong>Start Time:</strong> The outing starts at about <b>16:00</b>. We will begin gathering on the beach to get some sun and hydrate or something.<br />
