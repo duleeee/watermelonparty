@@ -43,8 +43,8 @@ const Introduction = () => {
         </p>
         <h2>Participation Details:</h2>
         <p>
-          <strong>Sign-Up:</strong> The signup sheet is at the front desk.<br />
-          <strong>Cost:</strong> The cover is 20 euros per person (<b>12 euros for hostel guests</b> of the Beach and Mint hostels). and it includes lots of refreshing watermelon bubbles.
+          <strong>Sign-Up:</strong> Please ask at the front desk if there are any spots left (our DB is down for the moment), and show them the screenshot of the confirmation page after you finish sign up here, to sign up.<br />
+          <strong>Cost:</strong> The cover is 20 euros per person <b>(12 euros for hostel guests)</b>. and it includes lots of socializing, fun and some refreshing watermelon bubbles.
         </p>
       </div>
       <div className="button-container">
