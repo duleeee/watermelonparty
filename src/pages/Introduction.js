@@ -42,10 +42,7 @@ const Introduction = () => {
         <h2>Event Location:</h2>
         <p><strong>Location:</strong> Our next event is in Split, Croatia,</p>
         <p>on <b>Wednesday, June 26th, and then on Friday, June the 28th, both at a secret location. (participants will get notified)</p>
-  <p> It is either going to be one of the beaches near the hostels, or we will be partying at the Kasjuni Beach.</b> </p> 
-        <p>Kasjuni is <b>a must-see beach </b> located west of the city, right next to Marjan Hill.</p>
-        <p>The place also features <b>a DJ on the beach, beds, and a bar.</b></p>
-      
+  
         <h2>Post-Event Plans:</h2>
         <p>
           <strong>After-Event:</strong> After the event, we will visit some cool bars in the Old Town, near the Diocletian's Palace.
@@ -53,7 +50,7 @@ const Introduction = () => {
         <h2>Participation Details:</h2>
         <p>
           <strong>Sign-Up:</strong> Please ask at the front desk if there are any spots left (our DB is down for the moment), and show them the screenshot of the confirmation page after you finish sign up here, to sign up.<br />
-          <strong>Cost:</strong> The cover is 20 euros per person <b>(12 euros for hostel guests)</b>. and it includes lots of socializing, fun and some refreshing watermelon bubbles.
+          <strong>Cost:</strong> <b>The cover is 12 euros per person </b>. and it includes lots of fun, socializing, and some refreshing watermelon bubbles.
         </p>
       </div>
       <div className="button-container">
