@@ -18,17 +18,17 @@ const Introduction = () => {
     <p>from a big, juicy watermelon on the beach.  </p>
     <p>Each contestant has a NUMBER written on their shoulder.</p>
         <h2>How it Works:</h2>
-        <p>The coach calls a number, (in this case Your Number) </p>
+        <p>The referee calls a number,</p>
     <p>you realize it's your number, and instantly feel the adrenaline start rushing through your body, </p>
-    <p>as your heart starts pumping, your breathing speeds up.</p>
-    <p>Your legs instanly push you forward, as you feel the sandy beach below your feet taking you running towards the watermelon in the middle.</p>
-    <p>As you approach the mellon (the track is like 7 meters in total, don't worry) you see almost in slow motion </p>
-    <p>the other participant kneeling in front of the mellon in front of you and taking her straw inside the watermelon,</p>
-    <p>and quickly gulping the sweet nectar from it. She chose the classic frontal kneel down position. (legitimate on sandy beaches).</p>
-<p>You slow down and put your straw inside your mouth, slightly biting on it, in an attempt to try </p>
-  <p>the famous two palms plant, lying on the stomach position. </p>
-      <p>It's a success. You are managig to hit the opening with the straw, and start gulping on the icy citrusy freshness from the mellon.</p>
-      <p>You feel a slight buzz kicking in, as you hear your temates cheering you on. </p>
+    <p>your breathing speeds up, as your heart starts pumping.</p>
+    <p>Your legs instanly push you forward, as you feel the sandy beach below your feet move, taking you running towards the watermelon in the middle.</p>
+    <p>Your steps speed up. As you approach the mellon (don't worry the whole track is like 7 meters) you start seeing, almost in slow motion, </p>
+    <p>the other participant kneeling in front of the mellon in front of you and taking her straw inside the opening on the top.</p>
+    <p>She's already quickly gulping the sweet nectar from it. She chose the classic frontal kneel down position. (legitimate on sandy beaches).</p>
+<p>You slow down a bit, and put your straw inside your mouth slightly biting on it, in an attempt to try </p>
+  <p>the famous two palms plant, lying on the stomach position. Your stomach hits the sand.</p>
+      <p>It's a success. You are managig to hit the opening with the straw too, and start gulping on the icy citrusy freshness from the mellon.</p>
+      <p>You feel a slight buzz kicking in, as you hear your temates cheering you on, and the referee call 'TIME'. </p>
 
     <h2><b>Rules are basic: </h2>
     <p>You have fun and socialize. You run only after your number is called. You use your mouth to direct the straw inside the watermelon. You drink as fast as you can (or not). You are respectul and makes sure everyone's safe.</p>
