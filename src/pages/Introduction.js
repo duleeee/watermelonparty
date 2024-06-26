@@ -52,6 +52,7 @@ const Introduction = () => {
           <strong>Sign-Up:</strong> Please ask at the front desk if there are any spots left (our DB is down for the moment), and show them the screenshot of the confirmation page after you finish sign up here, to sign up.<br />
           <strong>Cost:</strong> <b>The cover is 12 euros per person </b>. and it includes lots of fun, socializing, and some refreshing watermelon bubbles.
         </p>
+  <To sign up, please press the signup button and send the confirmation screensot to watermelonpartysplit@gmail.com. (Our DB is down at the moment)
       </div>
       <div className="button-container">
         <Link to="/home"><button className="signup-button">Sign me up</button></Link>
