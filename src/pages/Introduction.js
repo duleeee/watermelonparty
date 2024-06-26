@@ -41,7 +41,7 @@ const Introduction = () => {
         </p>
         <h2>Event Location:</h2>
         <p><strong>Location:</strong> Our next event is in Split, Croatia,</p>
-        <p>on <b>Wednesday, June 26th, and then on Friday, June the 28th, both at a secret location. (participants will get notified)</p>
+        <p>on <b>Thursday, June the 27th, and then on Friday, June the 28th, each on a different secret location. (participants will get notified)</p>
   
         <h2>Post-Event Plans:</h2>
         <p>
@@ -49,9 +49,9 @@ const Introduction = () => {
         </p>
         <h2>Participation Details:</h2>
         <p>
-          <strong>Sign-Up:</strong> Please ask at the front desk if there are any spots left (our DB is down for the moment), and show them the screenshot of the confirmation page after you finish sign up here, to sign up.<br />
-          <strong>Cost:</strong> <b>The cover is 12 euros per person </b>. and it includes lots of fun, socializing, and some refreshing watermelon bubbles.
-        <h2>To sign up, please press the signup button and send the confirmation screensot to watermelonpartysplit@gmail.com. (Our DB is down at the moment)</h2>
+          <strong>Sign-Up:</strong> Please ask at the front desk if there are any spots left and signnup there.<br />
+          <strong>Cost:</strong> <b>The cover is 10 euros per person (8 euros for females)</b>. and it includes lots of fun, socializing, and some realy tasty and refreshing watermelon bubbles.
+        <h2>To sign up online, please press the signup button, answer the questions, and send the confirmation screensot to watermelonpartysplit@gmail.com (copy paste it).()</h2>
       </div>
       <div className="button-container">
         <Link to="/home"><button className="signup-button">Sign me up</button></Link>
