@@ -1,3 +1,7 @@
+
+
+
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Introduction.css';
@@ -9,26 +13,31 @@ const Introduction = () => {
         <h1>Watermelon Beach Party</h1>
         <h2>What is it?</h2>
         <p>It's a <b>drinking game, or as some call it, a drinking sport</b>.</p>
-    <p>Two mixed-gender teams compete to see who <b>can drink</b> </p>
+    <p>Two mixed-gender teams "compete" to see who <b>can drink</b> </p>
     <p>more of the <b>icy, refreshing Vodka and Fanta mix</b> </p>
     <p>from a big, juicy watermelon on the beach.  </p>
-    <p>Two teams: Team Hostel Beach and Team Hostel Mint; </p> 
-  <p><b>24 PARTICIPANTS total, 12 in each TEAM, 6 MALE and 6 FEMALE.</b></p> 
-    <p>Each contestant has a NUMBER written on their shoulder, 1 to 12, </p>
-    <p>and their DRINKING NAME below it.</p>
+    <p>Each contestant has a NUMBER written on their shoulder.</p>
         <h2>How it Works:</h2>
-        <p>The coach picks a number, </p>
-    <p>and the participants with the chosen number, of both teams, leap across the beach running (for like 7 meters, don't worry) </p>
-    <p>to drink from the watermelon placed in the center, </p>
-    <p><b>THROUGH A STRAW</b>.</p>
-    <p><b>Whoever gets drunk, wins.</b> </p> 
-    <p>Needless to say, <b>we are expecting many winners and lots of fun.</b> :)</p>o socializ
-  <p><b> The main idea is not to get drunk, but to socialize, and talk to new people. </p>
-  <p>We designed this outing to provide lots of opportunities for that.</b></p>
+        <p>The coach calls a number, (in this case Your Number) </p>
+    <p>you realize it's your number, and instantly feel the adrenaline start rushing through your body, </p>
+    <p>as your heart starts pumping, your breathing speeds up.</p>
+    <p>Your legs instanly push you forward, as you feel the sandy beach below your feet taking you running towards the watermelon in the middle.</p>
+    <p>As you approach the mellon (the track is like 7 meters in total, don't worry) you see almost in slow motion </p>
+    <p>the other participant kneeling in front of the mellon in front of you and taking her straw inside the watermelon,</p>
+    <p>and quickly gulping the sweet nectar from it. She chose the classic frontal kneel down position. (legitimate on sandy beaches).</p>
+<p>You slow down and put your straw inside your mouth, slightly biting on it, in an attempt to try </p>
+  <p>the famous two palms plant, lying on the stomach position. </p>
+      <p>It's a success. You are managig to hit the opening with the straw, and start gulping on the icy citrusy freshness from the mellon.</p>
+      <p>You feel a slight buzz kicking in, as you hear your temates cheering you on. </p>
+
+    <h2><b>Rules are basic: </h2>
+    <p>You have fun and socialize. You run only after your number is called. You use your mouth to direct the straw inside the watermelon. You drink as fast as you can (or not). You are respectul and makes sure everyone's safe.</p>
+    <p>Whoever gets drunk, wins. Whoever socializes, wins.</b> </p> 
+    <p>Needless to say, <b>we are expecting many winners and lots of fun.</b> :)</p>
         <h2>Schedule:</h2>
         <p>
-          <strong>Start Time:</strong> The outing starts at about <b>16:00</b>. We will begin gathering on the beach to get some sun and hydrate or something.<br />
-          <strong>Game Start:</strong> <b>The games will begin at 19:30</b> .
+          <strong>Start Time:</strong> <b>The outing starts at about 16:00.</b>. <br />
+          <strong>Game Start:</strong> We will begin gathering on the beach to get some sun and hydrate or something before the game that starts at 19:30.
         </p>
         <h2>Event Location:</h2>
         <p><strong>Location:</strong> Our next event is in Split, Croatia,</p>
@@ -55,3 +64,4 @@ const Introduction = () => {
 };
 
 export default Introduction;
+
