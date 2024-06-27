@@ -44,9 +44,9 @@ const Introduction = () => {
         <p>
           <strong>After-Event:</strong> After the event, we will visit some cool bars in the Old Town, near the Diocletian's Palace.
         </p>
-        <h2>Participation Details:</h2>
+        <h2>Cost: €9.99 per person.</h2>
         <p>
-          <strong>Cost: €9.99 per person. </strong><p>Regular Price €12.99.</p><br />
+          <strong>Regular Price €12.99.</strong><br />
           <strong>Sign Up Now because there are only a few spots left.</strong>
         </p>
       </div>
