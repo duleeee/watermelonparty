@@ -46,8 +46,8 @@ const Introduction = () => {
         </p>
         <h2>Participation Details:</h2>
         <p>
-          <strong>Cost:</strong> 9.99 euros per person<br />
-          <strong>Click the Sign Up Now, because there are ony a few spots left.</strong>
+          <strong>Cost: €9.99 per person. </strong><p>Regular Price €12.99.</p><br />
+          <strong>Sign Up Now because there are only a few spots left.</strong>
         </p>
       </div>
       <div className="button-container">
