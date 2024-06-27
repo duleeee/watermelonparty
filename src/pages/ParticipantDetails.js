@@ -92,8 +92,8 @@ const ParticipantDetails = () => {
       {step === 4 && (
         <div className="content">
           <h2>Please proceed to the Front Desk to make the payment.</h2>
-          <p>Show this screen to the front desk person.</p>
         <p><b>The price is 10 euros per person and we accept only cash.</b> </p> 
+        <p>Show this screen to the front desk person.</p>
           <p><strong>Name:</strong> {participant.name}</p>
           <p><strong>Email:</strong> {participant.email}</p>
           <p><strong>Drinking Name:</strong> {participant.drinkingName}</p>
