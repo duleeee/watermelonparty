@@ -46,7 +46,7 @@ const Introduction = () => {
         </p>
         <h2>Price:</h2>
         <p>
-          <strong>€9.99 per person.</strong> <strong>Regular Price €12.99.</strong><br />
+          <strong>€9.99 per person.</strong> <strong><p>Regular Price €12.99.</p></strong><br />
           <strong>Sign Up Now because there are only a few spots left.</strong>
         </p>
       </div>
