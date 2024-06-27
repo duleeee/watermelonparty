@@ -46,8 +46,8 @@ const Introduction = () => {
         </p>
         <h2>Participation Details:</h2>
         <p>
-          <strong>Sign-Up:</strong> The cover is 9.99 euros per person <br />
-          <strong>Cost:</strong> <b>Sign up now because there are ony a few spots left.</b>
+          <strong>Cost:</strong> 9.99 euros per person<br />
+          <strong>Click the Sign Up Now, because there are ony a few spots left.</strong>
         </p>
       </div>
       <div className="button-container">
