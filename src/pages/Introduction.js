@@ -11,7 +11,7 @@ const Introduction = () => {
         <p>It's a <b>drinking game, or as some call it, a drinking sport</b>.</p>
     <p>Two mixed-gender teams "compete" to see who <b>can drink</b> </p>
     <p>more of the <b>icy, refreshing Vodka and Fanta mix</b> </p>
-    <p>from a big, juicy watermelon on the beach.  </p>
+    <p>from a big, juicy watermelon on a beach.  </p>
     <p>Each contestant has a NUMBER written on their shoulder.</p>
         <h2>How it Works:</h2>
         <p>The referee calls a number, (let's imagine it's yours)</p>
