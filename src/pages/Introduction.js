@@ -16,9 +16,9 @@ const Introduction = () => {
         <h2>How it Works:</h2>
         <p>The referee calls a number, (let's imagine it's yours)</p>
     <p>you realize it's your number, and instantly feel the adrenaline start rushing through your body, </p>
-    <p>your heart starts pumping, and you breathe faster. You hear the referee "Go!".</p>
-    <p>Your legs instannly push you forward, as you feel the sandy beach below your feet movefaster, taking you running towards the watermelon in between two teams.</p>
-    <p>Your steps speed up as you her your team cheering for you. As you approach the melon (don't worry is like 7 meters away)  </p>
+    <p>your heart starts pumping, and you are breatheing faster. You hear the shout "Go!".</p>
+    <p>Your legs instannly push you forward, as you feel the sandy beach below your feet movefaster, taking you running towards the watermelon (don't worry is like 7 meters away).</p>
+    <p>Your steps speed up as you her your team cheering for you. As you approach the melon </p>
     <p>you see, almost in slow motion, the other participant already kneeling in front of the melon and taking her straw inside the opening on the top, taking the first sip.</p>
     <p>She chose the classic frontal kneel down position. (legitimate on sandy beaches).</p>
 <p>You slow down a bit, and decide to put your straw inside your mouth, and slightly biting on it in an attempt to try the famous two palms plant, lying on the stomach position.</p>
