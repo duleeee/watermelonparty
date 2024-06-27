@@ -91,18 +91,14 @@ const ParticipantDetails = () => {
       )}
       {step === 4 && (
         <div className="content">
-          <h2>Confirmation</h2>
-          <p>Thank you for signing up! Your confirmation details are below:</p>
+          <h2>Please proceed to the Front Desk to make the payment.</h2>
+          <p>Show this screen to the front desk person.</p>
+        <p><b>The price is 10 euros per person and we accept only cash.</b> </p> 
           <p><strong>Name:</strong> {participant.name}</p>
           <p><strong>Email:</strong> {participant.email}</p>
           <p><strong>Drinking Name:</strong> {participant.drinkingName}</p>
           <p><strong>Confirmation Code:</strong> {confirmation}</p>
-          <p>Please take a screenshot of this confirmation screen,</p>
-          <p>and <b>bring it to the front desk of your hostel</b> to make the payment.</p>
-          <p><b>The price is 12 euros per personfor hostel guests,</b> </p> 
-          <p>20 euros for outsiders. </p>
-          <p>The Interest is huge and the party is selling fast.</p>
-        <p>Hope to see you soon!</p>
+        <p>You will receive the confirmation email shortly after the payment.</p>
           <div className="button-container">
             <button className="selection-button" onClick={() => window.location.href = 'https://www.google.com'}>Finish</button>
           </div>
