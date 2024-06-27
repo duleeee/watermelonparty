@@ -30,28 +30,7 @@ const Introduction = () => {
     <p>You have fun and socialize. You run only after your number is called. You use your mouth to direct the straw inside the watermelon. You drink as fast as you can (or not). You are respectful and makes sure everyone's safe.</p>
     <p>Whoever gets drunk, wins. Whoever socializes, wins. </p> 
     <p>Needless to say, <b>we are expecting many winners and lots of fun.</b> :)</p>
-
-
     
-  //       <h1>Watermelon Beach Party</h1>
-  //       <h2>What is it?</h2>
-  //       <p>It's a <b>drinking game, or as some call it, a drinking sport</b>.</p>
-  //   <p>Two mixed-gender teams compete to see who <b>can drink</b> </p>
-  //   <p>more of the <b>icy, refreshing Vodka and Fanta mix</b> </p>
-  //   <p>from a big, juicy watermelon on the beach.  </p>
-  //   <p>Two teams, with max 24 participants in total. </p> 
-  // <p><b>24 PARTICIPANTS total, 12 in each TEAM, 6 MALE and 6 FEMALE.</b></p> 
-  //   <p>Each contestant has a NUMBER written on their shoulder, 1 to 12, </p>
-  //   <p>and their DRINKING NAME below it.</p>
-  //       <h2>How it Works:</h2>
-  //       <p>The coach picks a number, </p>
-  //   <p>and the participants with the chosen number, of both teams, leap across the beach running (for like 7 meters, don't worry) </p>
-  //   <p>to drink from the watermelon placed in the center, </p>
-  //   <p><b>THROUGH A STRAW</b>.</p>
-  //   <p><b>Whoever gets drunk, wins.</b> </p> 
-  //   <p>Needless to say, <b>we are expecting many winners and lots of fun.</b> :)</p>
-  // <p><b> The main idea is not to get drunk, but to socialize, and talk to new people. </b></p>
-  // <p>We designed this outing to provide lots of opportunities for that.</p>
         <h2>Schedule:</h2>
         <p>
           <strong>Start Time:</strong> You will get notified about the location at noon. The outing starts at <b>4PM</b>. We will begin gathering on the beach to get some sun and hydrate or something.<br />
