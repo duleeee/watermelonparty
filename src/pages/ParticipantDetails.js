@@ -14,13 +14,12 @@ const ParticipantDetails = () => {
     const { name, value } = e.target;
     setParticipant(prev => ({ ...prev, [name]: value }));
   };
-function copyEmail() {
+
+  const copyEmail = () => {
     var email = "watermelonpartysplit@gmail.com"; // Replace with your email address
     navigator.clipboard.writeText(email).then(function() {
         alert('Email address copied to clipboard: ' + email);
-    }, function(err) {
-        console.error('Unable to copy email: ', err);
-    });
+    }, );
 }
 
   
