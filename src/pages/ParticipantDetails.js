@@ -15,12 +15,17 @@ const ParticipantDetails = () => {
     setParticipant(prev => ({ ...prev, [name]: value }));
   };
 
-
-
-  
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
+  };
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText(participant.email).then(() => {
+      alert('Email address copied to clipboard: ' + participant.email);
+    }).catch(err => {
+      console.error('Unable to copy email: ', err);
+    });
   };
 
   const handleNext = () => {
@@ -78,6 +83,7 @@ const ParticipantDetails = () => {
           <div className="button-container">
             <button className="selection-button" onClick={() => setStep(1)}>Back</button>
             <button className="selection-button" onClick={handleNext}>Next</button>
+            <button className="selection-button" onClick={copyEmail}>Copy Email</button>
           </div>
         </div>
       )}
@@ -95,17 +101,16 @@ const ParticipantDetails = () => {
       {step === 4 && (
         <div className="content">
           <h2>Please proceed to the Front Desk to make the payment.</h2>
-        <p><b>The price is 9.99 euros per person.</b> </p>
-        <p><b>We accept cash only.</b> </p> 
-                <p>Show this screen to the front desk person to complete the signup and make the payment.</p>
+          <p><b>The price is 9.99 euros per person.</b> </p>
+          <p><b>We accept cash only.</b> </p> 
+          <p>Show this screen to the front desk person to complete the signup and make the payment.</p>
           <p><strong>Name:</strong> {participant.name}</p>
           <p><strong>Email:</strong> {participant.email}</p>
           <p><strong>Drinking Name:</strong> {participant.drinkingName}</p>
           <p><strong>Confirmation Code:</strong> {confirmation}</p>
-        <p>If you were signed up on a beach, please send this screenshot to:</p>
-        <p><strong> WATERMELONPARTYSPLIT@GMAIL.COM </strong></p>
-    
-        <p>You will receive the confirmation email shortly after the payment to the promoter.</p>
+          <p>If you were signed up on a beach, please send this screenshot to:</p>
+          <p><strong> WATERMELONPARTYSPLIT@GMAIL.COM </strong></p>
+          <p>You will receive the confirmation email shortly after the payment to the promoter.</p>
           <div className="button-container">
             <button className="selection-button" onClick={() => window.location.href = 'https://www.google.com'}>Finish</button>
           </div>
