@@ -100,7 +100,7 @@ const ParticipantDetails = () => {
           <p><strong>Drinking Name:</strong> {participant.drinkingName}</p>
           <p><strong>Confirmation Code:</strong> {confirmation}</p>
         <p>If you were signed up on a beach, please send this screenshot to:</p>
-        <p><strong> WATERMELONPARTYSPLIT@GMAIL.COM </strong>
+        <p><strong> WATERMELONPARTYSPLIT@GMAIL.COM </strong></p>
         <p>You will receive the confirmation email shortly after the payment to the promoter.</p>
           <div className="button-container">
             <button className="selection-button" onClick={() => window.location.href = 'https://www.google.com'}>Finish</button>
