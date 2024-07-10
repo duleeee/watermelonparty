@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState} from 'react';
+
 import './ParticipantDetails.css';
 
 const ParticipantDetails = () => {
+ 
+  const [step, setStep] = useState(0);
   const [participant, setParticipant] = useState({
     firstName: '',
     lastName: '',
