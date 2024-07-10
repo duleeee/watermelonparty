@@ -1,75 +1,169 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { gapi } from 'gapi-script';
+import axios from 'axios';
 import './ParticipantDetails.css';
 
-const fruits = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape', 'Honeydew', 'Kiwi', 'Lemon'];
+
+
+const CLIENT_ID = '6041751182-5jhj984j2qipc3v9p8b4i80ppk08g3ln.apps.googleusercontent.com'; // Replace with your client ID
+const API_KEY = 'AIzaSyACM2Uc96qzimQMZshwYzPLjPFcxnqRnps'; // Replace with your API key
+const SPREADSHEET_ID = '1_qURJdgpvEkoOTTfKnYsc_UCVFU91Ows1btqq-Pe4sI'; // Replace with your Google Sheet ID
+const RANGE = 'Sheet1!A:F'; // Replace with your specific sheet name and range
+const SCOPES = 'https://www.googleapis.com/auth/spreadsheets';
+
+
+
+const ACCESS_TOKEN = 'ya29.a0AXooCguq1tRaftR30X2H0rA7C3rE5WeeoSgkSIFDfHXfhAMmNJc9Z_Ms7NUJNgTXVcmWcxhTbsXVG2utF7KlbSt1A0Yo5YprlVJum1ZjExiu0MhPrEm3Q6AyJeK8LjlS0xLVnghX4Ye1g4xu802QfRnoR1MFhcWjV2_CaCgYKAVISARASFQHGX2MiVa2qsPWjIBsvT4hqgVaBLA0171'; // Replace with the access token obtained from OAuth Playground
+
+
+
 
 const ParticipantDetails = () => {
+  const navigate = useNavigate();
   const [step, setStep] = useState(0);
-  const [participant, setParticipant] = useState({ team: '', name: '', sex: '', email: '', drinkingName: '' });
-  const [confirmation, setConfirmation] = useState('');
-  const [emailError, setEmailError] = useState('');
+  const [participant, setParticipant] = useState({
+    firstName: '',
+    lastName: '',
+    drinkingName: '',
+    email: '',
+    date: '',
+    promoCode: ''
+  });
   const [nameError, setNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+  const [price, setPrice] = useState('15.99');
+  const [revolutLink, setRevolutLink] = useState('https://revolut.me/r/bOk1DoS38D'); // Default link for €15.99
+
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
+  const dayAfterTomorrow = new Date(today);
+  dayAfterTomorrow.setDate(today.getDate() + 2);
+
+  const formatDate = (date) => {
+    return date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+  };
+
+  // Initialize the Google API client with access token
+  const initClient = () => {
+    gapi.auth.setToken({
+      access_token: ACCESS_TOKEN,
+    });
+
+    gapi.client.init({
+      apiKey: API_KEY,
+      discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+    }).then(() => {
+      // API is initialized and access token is set
+      console.log('Google API initialized with access token');
+    }).catch(error => {
+      console.error('Error initializing Google API client', error);
+    });
+  };
+
+  useEffect(() => {
+    gapi.load('client:auth2', initClient);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setParticipant(prev => ({ ...prev, [name]: value }));
   };
 
-  const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText(participant.email).then(() => {
-      alert('Email address copied to clipboard: ' + participant.email);
-    }).catch(err => {
-      console.error('Unable to copy email: ', err);
-    });
-  };
-
   const handleNext = () => {
-    if (step === 1) { // Validate name at step 1
-      const nameParts = participant.name.trim().split(/\s+/);
-      if (nameParts.length !== 2) {
-        setNameError('Please enter your first and last name.');
-        return;
-      }
-      setNameError('');
-    } else if (step === 2) { // Validate email at step 2
-      if (!validateEmail(participant.email)) {
-        setEmailError('Please enter a valid email address.');
-        return;
-      }
-      setEmailError('');
+    if (step === 1 && !participant.firstName) {
+      setNameError('First name is required');
+      return;
     }
+    if (step === 3 && !/\S+@\S+\.\S+/.test(participant.email)) {
+      setEmailError('Please enter a valid email address');
+      return;
+    }
+    setNameError('');
+    setEmailError('');
     setStep(prev => prev + 1);
   };
 
-  const handleFinish = () => {
-    const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
-    const randomNumber = Math.floor(Math.random() * 100) + 1;
-    const confirmationCode = `${randomFruit}-${randomNumber}`;
-    setConfirmation(confirmationCode);
-    setStep(4);
+  const updatePrice = () => {
+    const { promoCode } = participant;
+    if (/apple|orange|banana|grape|watermelon|pineapple|mango|kiwi|peach|strawberry/i.test(promoCode)) {
+      setPrice('12.99');
+      setRevolutLink('https://revolut.me/r/YWRAO1Ucb3');
+    } else if (/hostel/i.test(promoCode)) {
+      setPrice('9.99');
+      setRevolutLink('https://revolut.me/r/XtaDLmiDQ1');
+    } else if (/antonio10/i.test(promoCode)) {
+      setPrice('6.99');
+      setRevolutLink('https://revolut.me/r/nFJ2FWDzXR');
+    } else if (/dusan33/i.test(promoCode)) {
+      setPrice('0');
+      setRevolutLink(''); // You can set a default link or handle differently for €0 case
+    } else {
+      setPrice('15.99');
+      setRevolutLink('https://revolut.me/r/bOk1DoS38D');
+    }
+  };
+
+  const handleFinish = async () => {
+    const values = [
+      [
+        participant.firstName,
+        participant.lastName,
+        participant.drinkingName,
+        participant.email,
+        participant.date,
+        participant.promoCode
+      ]
+    ];
+
+    try {
+      const response = await gapi.client.sheets.spreadsheets.values.append({
+        spreadsheetId: SPREADSHEET_ID,
+        range: RANGE,
+        valueInputOption: 'RAW',
+        resource: {
+          values,
+        },
+      });
+
+      console.log('Updated Google Sheet:', response);
+    } catch (error) {
+      console.error('Error appending to Google Sheet:', error);
+    }
+
+    alert(`Please proceed to the front desk of the Hostel Mint or the Hostel Beach to pay for the event. The price is ${price} euros per person for hostel guests. Please show them this screen or the confirmation email we have just sent you.\nName: ${participant.firstName} ${participant.lastName}\nEmail: ${participant.email}\nDrinking Name: ${participant.drinkingName}`);
+    setStep(0);
+    setParticipant({
+      firstName: '',
+      lastName: '',
+      drinkingName: '',
+      email: '',
+      date: '',
+      promoCode: ''
+    });
+    setPrice('15.99');
+    setRevolutLink('https://revolut.me/r/bOk1DoS38D'); // Reset to default link
   };
 
   return (
     <div className="participant-details">
       {step === 0 && (
         <div className="content">
-          <h2>Select your team</h2>
+          <h2>Are you 18+?</h2>
           <div className="button-container">
-            <button className="selection-button" onClick={() => { handleChange({ target: { name: 'team', value: 'hostel mint' } }); setStep(1); }}>Hostel Mint</button>
-            <button className="selection-button" onClick={() => { handleChange({ target: { name: 'team', value: 'team beach' } }); setStep(1); }}>Beach Hostel</button>
+            <button className="selection-button" onClick={() => setStep(1)}>Yes</button>
+            <button className="selection-button" onClick={() => window.location.href = 'https://www.google.com'}>No</button>
           </div>
         </div>
       )}
       {step === 1 && (
         <div className="content">
-          <h2>Your first and last name</h2>
-          <input type="text" name="name" value={participant.name} onChange={handleChange} />
+          <h2>First name:</h2>
+          <input type="text" name="firstName" value={participant.firstName} onChange={handleChange} style={{ textTransform: 'uppercase' }} />
           {nameError && <p className="error-message">{nameError}</p>}
+          <h2>Last name:</h2>
+          <input type="text" name="lastName" value={participant.lastName} onChange={handleChange} style={{ textTransform: 'uppercase' }} />
           <div className="button-container">
             <button className="selection-button" onClick={handleNext}>Next</button>
           </div>
@@ -77,42 +171,57 @@ const ParticipantDetails = () => {
       )}
       {step === 2 && (
         <div className="content">
-          <h2>What's your email, {participant.name.split(' ')[0]}?</h2>
-          <input type="email" name="email" value={participant.email} onChange={handleChange} />
-          {emailError && <p className="error-message">{emailError}</p>}
+          <h2>What's your drinking name?</h2>
+          <p>If you don't have a drinking name, invent one; how would your friends call you when you drink?</p>
+          <input type="text" name="drinkingName" value={participant.drinkingName} onChange={handleChange} style={{ textTransform: 'uppercase' }} />
           <div className="button-container">
-            <button className="selection-button" onClick={() => setStep(1)}>Back</button>
             <button className="selection-button" onClick={handleNext}>Next</button>
-            <button className="selection-button" onClick={copyEmail}>Copy Email</button>
           </div>
         </div>
       )}
       {step === 3 && (
         <div className="content">
-          <h2>What's your drinking name?</h2>
-          <p>If you don't have a drinking name, invent one; how would your friends call you when you drink?</p>
-          <input type="text" name="drinkingName" value={participant.drinkingName} onChange={handleChange} />
+          <h2>Your email:</h2>
+          <input type="email" name="email" value={participant.email} onChange={handleChange} style={{ textTransform: 'uppercase' }} />
+          {emailError && <p className="error-message">{emailError}</p>}
           <div className="button-container">
             <button className="selection-button" onClick={() => setStep(2)}>Back</button>
-            <button className="selection-button" onClick={handleFinish}>Next</button>
+            <button className="selection-button" onClick={handleNext}>Next</button>
           </div>
         </div>
       )}
       {step === 4 && (
         <div className="content">
-          <h2>Please proceed to the Front Desk to make the payment.</h2>
-          <p><b>The price is 9.99 euros per person.</b> </p>
-          <p><b>We accept cash only.</b> </p> 
-          <p>Show this screen to the front desk person to complete the signup and make the payment.</p>
-          <p><strong>Name:</strong> {participant.name}</p>
+          <h2>Available dates:</h2>
+          <div className="button-container">
+            <button className="selection-button" onClick={() => { handleChange({ target: { name: 'date', value: formatDate(today) } }); handleNext(); }}>{formatDate(today)}</button>
+            <button className="selection-button" onClick={() => { handleChange({ target: { name: 'date', value: formatDate(tomorrow) } }); handleNext(); }}>{formatDate(tomorrow)}</button>
+            <button className="selection-button" onClick={() => { handleChange({ target: { name: 'date', value: formatDate(dayAfterTomorrow) } }); handleNext(); }}>{formatDate(dayAfterTomorrow)}</button>
+          </div>
+        </div>
+      )}
+      {step === 5 && (
+        <div className="content">
+          <h2>Enter the Promo Code:</h2>
+          <input type="text" name="promoCode" value={participant.promoCode} onChange={handleChange} />
+          <button className="selection-button" onClick={updatePrice}>Enter</button>
+          <div className="button-container">
+            <button className="selection-button" onClick={() => window.location.href = revolutLink}>Pay €{price}</button>
+          </div>
+        </div>
+      )}
+      {step === 6 && (
+        <div className="content">
+          <h2>Confirmation</h2>
+          <p>Thank you for signing up! Your confirmation details are below:</p>
+          <p><strong>Name:</strong> {participant.firstName} {participant.lastName}</p>
           <p><strong>Email:</strong> {participant.email}</p>
           <p><strong>Drinking Name:</strong> {participant.drinkingName}</p>
-          <p><strong>Confirmation Code:</strong> {confirmation}</p>
-          <p>If you were signed up on a beach, please send this screenshot to:</p>
-          <p><strong> WATERMELONPARTYSPLIT@GMAIL.COM </strong></p>
-          <p>You will receive the confirmation email shortly after the payment to the promoter.</p>
+          <p><strong>Promo Code:</strong> {participant.promoCode}</p>
+          <p><strong>Revolut Payment Details:</strong> Payment of €{price} made on {new Date().toLocaleString()}</p>
+          <p>Please proceed to the front desk of the Hostel Mint or the Hostel Beach to pay for the event. The price is 12 euros per person for hostel guests. Please show them this screen or the confirmation email we have just sent you.</p>
           <div className="button-container">
-            <button className="selection-button" onClick={() => window.location.href = 'https://www.google.com'}>Finish</button>
+            <button className="selection-button" onClick={handleFinish}>Finish</button>
           </div>
         </div>
       )}
