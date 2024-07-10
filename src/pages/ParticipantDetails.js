@@ -1,22 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { gapi } from 'gapi-script';
-import axios from 'axios';
 import './ParticipantDetails.css';
-
-
-const CLIENT_ID = '6041751182-5jhj984j2qipc3v9p8b4i80ppk08g3ln.apps.googleusercontent.com'; // Replace with your client ID
-const API_KEY = 'AIzaSyACM2Uc96qzimQMZshwYzPLjPFcxnqRnps'; // Replace with your API key
-const SPREADSHEET_ID = '1_qURJdgpvEkoOTTfKnYsc_UCVFU91Ows1btqq-Pe4sI'; // Replace with your Google Sheet ID
-const RANGE = 'Sheet1!A:F'; // Replace with your specific sheet name and range
-const SCOPES = 'https://www.googleapis.com/auth/spreadsheets';
-
-
-
-const ACCESS_TOKEN = 'ya29.a0AXooCguq1tRaftR30X2H0rA7C3rE5WeeoSgkSIFDfHXfhAMmNJc9Z_Ms7NUJNgTXVcmWcxhTbsXVG2utF7KlbSt1A0Yo5YprlVJum1ZjExiu0MhPrEm3Q6AyJeK8LjlS0xLVnghX4Ye1g4xu802QfRnoR1MFhcWjV2_CaCgYKAVISARASFQHGX2MiVa2qsPWjIBsvT4hqgVaBLA0171'; // Replace with the access token obtained from OAuth Playground
-
-
 
 const ParticipantDetails = () => {
   const navigate = useNavigate();
@@ -43,24 +27,6 @@ const ParticipantDetails = () => {
   const formatDate = (date) => {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
   };
-
-  // Initialize the Google API client
-  const initClient = () => {
-    gapi.client.init({
-      apiKey: API_KEY,
-      clientId: CLIENT_ID,
-      discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
-      scope: SCOPES,
-    }).then(() => {
-      gapi.auth2.getAuthInstance().signIn();
-    }).catch(error => {
-      console.error('Error initializing Google API client', error);
-    });
-  };
-
-  useEffect(() => {
-    gapi.load('client:auth2', initClient);
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -101,33 +67,7 @@ const ParticipantDetails = () => {
     }
   };
 
-  const handleFinish = async () => {
-    const values = [
-      [
-        participant.firstName,
-        participant.lastName,
-        participant.drinkingName,
-        participant.email,
-        participant.date,
-        participant.promoCode
-      ]
-    ];
-
-    try {
-      const response = await gapi.client.sheets.spreadsheets.values.append({
-        spreadsheetId: SPREADSHEET_ID,
-        range: RANGE,
-        valueInputOption: 'RAW',
-        resource: {
-          values,
-        },
-      });
-
-      console.log('Updated Google Sheet:', response);
-    } catch (error) {
-      console.error('Error appending to Google Sheet:', error);
-    }
-
+  const handleFinish = () => {
     alert(`Please proceed to the front desk of the Hostel Mint or the Hostel Beach to pay for the event. The price is ${price} euros per person for hostel guests. Please show them this screen or the confirmation email we have just sent you.\nName: ${participant.firstName} ${participant.lastName}\nEmail: ${participant.email}\nDrinking Name: ${participant.drinkingName}`);
     setStep(0);
     setParticipant({
@@ -227,3 +167,5 @@ const ParticipantDetails = () => {
 
 export default ParticipantDetails;
 
+
+// verzija sa revolut bes sheets
