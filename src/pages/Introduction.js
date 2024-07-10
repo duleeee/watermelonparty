@@ -14,7 +14,7 @@ const Introduction = () => {
     <p>from a big, juicy watermelon on a beach.  </p>
     <p>Each contestant has a NUMBER written on their shoulder.</p>
         <h2>How it Works:</h2>
-        <p>The referee calls a number, (imagine yours)</p>
+        <p>The referee calls a number, (let's imagine - yours)</p>
     <p>you realize you're on. You instantly feel the adrenaline rushing through your body, </p>
     <p>you becomes involontarily faster. You hear your heart pumping. </p>
     <p>The referee shouts: "Go!". Your feel your legs instannly pushing you forward, running towards the watermelon in the middle of th beach (don't worry is like 7 meters away).</p>
