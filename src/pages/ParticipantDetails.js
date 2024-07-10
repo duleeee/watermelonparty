@@ -1,9 +1,9 @@
+
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { gapi } from 'gapi-script';
 import axios from 'axios';
 import './ParticipantDetails.css';
-
 
 
 const CLIENT_ID = '6041751182-5jhj984j2qipc3v9p8b4i80ppk08g3ln.apps.googleusercontent.com'; // Replace with your client ID
@@ -15,7 +15,6 @@ const SCOPES = 'https://www.googleapis.com/auth/spreadsheets';
 
 
 const ACCESS_TOKEN = 'ya29.a0AXooCguq1tRaftR30X2H0rA7C3rE5WeeoSgkSIFDfHXfhAMmNJc9Z_Ms7NUJNgTXVcmWcxhTbsXVG2utF7KlbSt1A0Yo5YprlVJum1ZjExiu0MhPrEm3Q6AyJeK8LjlS0xLVnghX4Ye1g4xu802QfRnoR1MFhcWjV2_CaCgYKAVISARASFQHGX2MiVa2qsPWjIBsvT4hqgVaBLA0171'; // Replace with the access token obtained from OAuth Playground
-
 
 
 
@@ -45,18 +44,15 @@ const ParticipantDetails = () => {
     return date.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
   };
 
-  // Initialize the Google API client with access token
+  // Initialize the Google API client
   const initClient = () => {
-    gapi.auth.setToken({
-      access_token: ACCESS_TOKEN,
-    });
-
     gapi.client.init({
       apiKey: API_KEY,
+      clientId: CLIENT_ID,
       discoveryDocs: ['https://sheets.googleapis.com/$discovery/rest?version=v4'],
+      scope: SCOPES,
     }).then(() => {
-      // API is initialized and access token is set
-      console.log('Google API initialized with access token');
+      gapi.auth2.getAuthInstance().signIn();
     }).catch(error => {
       console.error('Error initializing Google API client', error);
     });
@@ -230,3 +226,4 @@ const ParticipantDetails = () => {
 };
 
 export default ParticipantDetails;
+
