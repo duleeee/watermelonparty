@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import './ParticipantDetails.css';
 
 const ParticipantDetails = () => {
-  const navigate = useNavigate();
-  const [step, setStep] = useState(0);
   const [participant, setParticipant] = useState({
     firstName: '',
     lastName: '',
