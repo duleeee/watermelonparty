@@ -7,6 +7,7 @@ const Introduction = () => {
     <div className="introduction-page">
       <div className="contentw">
       <h1>Watermelon Beach Party</h1>
+      <p><b>The new taste of Dalmatia.</b></p>
         <h2>What is it?</h2>
         <p>It's a <b>drinking game, or as some call it, a drinking sport</b>.</p>
     <p>Two mixed-gender teams "compete" to see who <b>can drink</b> </p>
