@@ -20,7 +20,7 @@ const Introduction = () => {
 have numbers and letters on their
 shoulders.</p><p>Vodka-spiked watermelon
 with Fanta, </p><p>cut on top, placed in
-the middle, in between the two teams.</p>
+the middle, between the two teams.</p>
 
 <p><strong>Referee calls a letter and a number.</strong></p>
 <p>The called contestants run to the watermelon,</p>
