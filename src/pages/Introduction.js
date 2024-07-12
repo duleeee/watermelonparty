@@ -37,28 +37,33 @@ they can </p> <p><b>without using their hands</b></p>
 <p>until the referee says "STOP".</p>
 <p>Then calls the next pair.</p>
 <p>It's like:</p>
-<p><strong>Run, drink, swim, socialize, repeat.</strong></p>
+<p><h1>Run, drink, swim, repeat.</h1></p>
 
 <p> </p>
     
     <h2><b>Rules are basic: </b></h2>
-    <p><b>No hands.</b> You run only after your number is called. You use your mouth to pick and direct the straw inside the watermelon. You enjoy yourself and socialize.</p>
-    <p>Whoever gets drunk, wins - Whoever socializes - wins. </p> 
+    <p><b>No hands.</b> </p>
+    <p>You run only after your number is called. </p>
+    <p>You use your mouth to pick and direct the straw inside the watermelon.</p>
+    <p> You enjoy yourself and socialize.</p>
+    <p><strong>Whoever gets drunk - wins.</strong></p>
+    <p><strong>- Whoever socializes - wins.</strong></p> 
     <p>Needless to say, <b>we are expecting many winners and lots of fun.</b> :)</p>
     
         <h2>Schedule:</h2>
         <p>
-          <strong>Start Time:</strong>The outing starts at <b>1PM</b>. We will begin gathering on the beach to get some sun and hydrate or something.<br />
-          <strong>Game Start:</strong> <b>The games will begin at 7:45PM</b> .
+          <p><strong>Start Time:</strong></p><p></p>The outing starts at <b>1PM</b>. </p>
+          <p>We will begin gathering on the beach to get some sun and hydrate or something.<br />
+         <p> <strong>Game Start:</strong></p> <p><b>The games will begin at 7:45PM.</b></p>
         </p>
         <h2>Event Location:</h2>
         <p><strong>Location:</strong> Our next event is in Split, Croatia.</p>
 <p> Please choose the date during the signup. </p>
         <h2>Post-Event Plans:</h2>
         <p>
-          <strong>After-Event:</strong> After the event, we will go to the Bacvice night club where the participants get </p>
+          <strong>After-Event:</strong> After the event, we will go to the Bacvice night club where the participants will get </p>
   <p> the FREE ENTRY (worth €10 in value) and a FREE COCKTAIL of your own choosing (additional €7 in value)  </p>
-  <p> In total, €17 worth of FREE STUFF with the signup. </p>
+  <p> In total, €17 worth of FREE STUFF with this signup. </p>
         <h2>Price:</h2>
         <p>
           <strong>€12.99 per person.</strong> <p><i>Regular Price:</i></p><p><i>€14.99 per person.</i></p><br />
