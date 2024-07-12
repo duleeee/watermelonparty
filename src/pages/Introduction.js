@@ -30,8 +30,8 @@ all fours,</p>
 <p><strong>then use their mouths, teeth, or lips</strong></p>
 <p>to pick the straws inserted in the rind</p>
 <p>of the watermelon. <p></p>Then skillfully</p>
-<p>insert their straw into the red cut</p>
-<p>opening on top of the watermelon <b>(no hands allowed)</b></p>
+<p>insert them into the red opening</p>
+<p>on top of the watermelon <b>(no hands allowed)</b></p>
 <p>and drink the refreshing mixture as fast as
 they can </p> <p><b>without using their hands</b></p>
 <p>until the referee says "STOP".</p>
