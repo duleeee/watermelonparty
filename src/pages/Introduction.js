@@ -33,7 +33,7 @@ all fours,</p>
 <p>insert them into the red opening</p>
 <p>on top of the watermelon <b>(no hands allowed)</b></p>
 <p>and drink the refreshing mixture as fast as
-they can </p> <p><b>without using their hands</b></p>
+they can </p> 
 <p>until the referee says "STOP".</p>
 <p>Then calls the next pair.</p>
 <p>It's like:</p>
@@ -66,7 +66,7 @@ they can </p> <p><b>without using their hands</b></p>
   <p> In total, €17 worth of FREE STUFF with this signup. </p>
         <h2>Price:</h2>
         <p>
-          <strong>€12.99 per person.</strong> <p><i>Regular Price:</i></p><p><i>€14.99 per person.</i></p><br />
+          <strong>€12.99 per person.</strong> <p><i>Regular Price:</i></p><p><i>€14.99</i></p><br />
           <strong>There are only a few spots left so</strong>
          <p><strong>SIGN UP NOW!</strong></p> 
         </p>
