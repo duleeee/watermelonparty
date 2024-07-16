@@ -32,8 +32,7 @@ all fours,</p>
 <p>of the watermelon. <p></p>Then skillfully</p>
 <p>insert them into the red opening</p>
 <p>on top of the watermelon <b>(no hands allowed)</b></p>
-<p>and drink the refreshing mixture as fast as
-they can </p> 
+<p>and drink the refreshing mixture as fast as they can </p> 
 <p>until the referee says "STOP".</p>
 <p>Then calls the next pair.</p>
 <p>It's like:</p>
